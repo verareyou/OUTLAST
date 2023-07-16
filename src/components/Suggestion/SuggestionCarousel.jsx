@@ -52,7 +52,7 @@ const SuggestionCarousel = () => {
                 key={index}
                 img={suggestion?.participants[0]?.avatar}
                 title={suggestion?.tripName}
-                subtitle={suggestion?.destination.split(",")[1]}
+                subtitle={suggestion?.destination.split(",")[0]}
               />
             ))}
           </div>

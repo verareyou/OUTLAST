@@ -9,7 +9,6 @@ const NearByCard = ({ destination, setNearBy, nearBy }) => {
     // const [loading, setLoading] = useState(false)
     // const [error, setError] = useState(false)
     const [input, setInput] = useState('')
-    console.log(nearBy)
 
 
     // const getNearBy = async () => {

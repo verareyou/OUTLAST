@@ -208,8 +208,6 @@ export async function handleCreateTrip(dispatch, profile, data) {
       endsOn: data?.endsOn,
       limit: data?.limit,
       desc: data?.desc,
-      suggestions: data?.suggestion,
-      image: "",
       comments: [],
       participants: [
         {

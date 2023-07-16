@@ -12,6 +12,7 @@ import TripView from "./pages/TripView"
 
 const App = () => {
   const { siteLoader, firebaseLoader } = useSelector((state) => state.loader)
+  const { profile } = useSelector((state) => state?.userData)
 
   return (
     <>
@@ -26,7 +27,7 @@ const App = () => {
         <Loader />
       ) : (
         <Router>
-          {/* <NavBar /> */}
+          <NavBar profile={profile} />
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/login" element={<LoginRegister />} />

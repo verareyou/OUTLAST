@@ -10,7 +10,6 @@ const HomeScreen = () => {
 
   return (
     <div className=" bg-primary min-h-screen flex flex-col text-text ">
-      <NavBar profile={profile} />
       <SuggestionCarousel />
       <SearchBar />
       {!profile && <BottomLoginBar />}
